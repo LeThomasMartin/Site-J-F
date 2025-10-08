@@ -9,8 +9,7 @@
 <link rel="stylesheet" href="contact.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 7.12.8, nicepage.com">
-      <link rel="stylesheet" href="commun.css">
+    <meta name="generator" content="Nicepage 7.13.0, nicepage.com">
     
     
     
@@ -230,146 +229,115 @@
         }
     };
     </script>
-    <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const form = document.getElementById('contactForm') || document.querySelector('form[action="sendmail.php"]');
-  if (!form) {
-    console.error('Formulaire introuvable (id contactForm ou action=sendmail.php).');
-    return;
-  }
-
-
-
-  
-  // 1) Si Nicepage a mis un <a> comme bouton, transforme le comportement pour déclencher la soumission
-  document.querySelectorAll('.u-btn-submit, a.u-btn-submit').forEach(el => {
-    el.addEventListener('click', function(evt){
-      evt.preventDefault();
-      // supprime champs recaptcha pouvant bloquer
-      document.querySelectorAll('input[name="recaptchaResponse"], input[name="siteKey"], input[name="formServices"]').forEach(i => i.remove());
-      // déclenche la soumission normale
-      form.requestSubmit ? form.requestSubmit() : form.submit();
-    });
-  });
-
-  // 2) Intercepte la soumission pour faire un POST via fetch (permet debug et réponse claire)
-  form.addEventListener('submit', function(evt){
-    evt.preventDefault(); // annule soumission classique
-
-    // Supprime champs reCAPTCHA (développement local)
-    document.querySelectorAll('input[name="recaptchaResponse"], input[name="siteKey"], input[name="formServices"]').forEach(i => i.remove());
-
-    const fd = new FormData(form);
-
-    // Affiche en console ce qu'on envoie (debug)
-    for (let pair of fd.entries()) console.log(pair[0]+':', pair[1]);
-
-    fetch('sendmail.php', {
-      method: 'POST',
-      body: fd,
-      credentials: 'same-origin'
-    })
-    .then(async res => {
-      const text = await res.text();
-      console.log('Réponse serveur:', res.status, text);
-      if (!res.ok) {
-        alert('Erreur lors de l\'envoi — voir console pour détails.');
-      } else {
-        alert('Message envoyé !');
-        // optionnel: rediriger vers une page merci
-        // window.location.href = 'merci.html';
-      }
-    })
-    .catch(err => {
-      console.error('Erreur fetch:', err);
-      alert('Erreur de connexion — voir console (F12).');
-    });
-  });
-});
-</script>
-
-
 <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
-  <body data-path-to-root="./" data-include-products="false" class="u-body u-clearfix u-xl-mode" data-lang="fr"><header class="u-border-2 u-border-custom-color-3 u-clearfix u-header u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-header" id="header"><div class="u-clearfix u-sheet u-valign-middle-xl u-sheet-1">
+  <body data-path-to-root="./" data-include-products="false" class="u-body u-clearfix u-xl-mode" data-lang="fr"><header class="u-border-2 u-border-custom-color-3 u-clearfix u-header u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-header" id="header"><div class="u-clearfix u-sheet u-valign-top-md u-valign-top-sm u-valign-top-xl u-valign-top-xs u-sheet-1">
         <a href="#" class="u-image u-logo u-image-1" data-image-width="647" data-image-height="424">
           <img src="images/Logo.png" class="u-logo-image u-logo-image-1">
         </a>
         <p class="u-text u-text-1">Nous joindre<br>
+        </p><span class="u-file-icon u-icon u-icon-1"><img src="images/31247.png" alt=""></span>
+        <p class="u-text u-text-2">
+          <a href="tel:450-806-6690" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-5 u-btn-1">450-806-6690</a>
         </p>
-        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1" role="navigation" aria-label="Menu navigation">
+        <nav class="u-menu u-menu-one-level u-offcanvas u-menu-1" role="navigation" data-responsive-from="MD">
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px; text-transform: uppercase; font-weight: 500;">
-            <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-decoration u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-hamburger-link u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base u-hamburger-link-1" href="#" tabindex="-1" aria-label="Open menu" aria-controls="2ba4">
+            <a class="u-button-style u-custom-active-border-color u-custom-active-color u-custom-border u-custom-border-color u-custom-borders u-custom-hover-border-color u-custom-hover-color u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-text-active-color u-custom-text-color u-custom-text-decoration u-custom-text-hover-color u-custom-top-bottom-menu-spacing u-hamburger-link u-nav-link u-radius u-text-active-palette-1-base u-text-hover-palette-2-base u-hamburger-link-1" href="#" tabindex="-1" aria-label="Open menu" aria-controls="2ba4">
               <svg class="u-svg-link" viewBox="0 0 24 24"><use xlink:href="#menu-hamburger"></use></svg>
               <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
 </g></svg>
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-            <ul role="menubar" class="u-nav u-spacing-2 u-unstyled u-nav-1"><li role="none" class="u-nav-item"><a role="menuitem" class="u-active-palette-1-base u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-hover-palette-1-light-1 u-nav-link u-text-active-white u-text-grey-90 u-text-hover-white" href="./" style="padding: 10px 20px;">accueil</a>
-</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-active-palette-1-base u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-hover-palette-1-light-1 u-nav-link u-text-active-white u-text-grey-90 u-text-hover-white" href="a-propos.html" style="padding: 10px 20px;">Services offert</a>
-</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-active-palette-1-base u-border-2 u-border-active-palette-1-base u-border-hover-palette-1-light-1 u-border-no-left u-border-no-right u-border-no-top u-button-style u-hover-palette-1-light-1 u-nav-link u-text-active-white u-text-grey-90 u-text-hover-white" href="contact.html" style="padding: 10px 20px;">Nous Contacter</a>
+            <ul role="menubar" class="u-nav u-spacing-2 u-unstyled u-nav-1"><li role="none" class="u-nav-item"><a role="menuitem" class="u-active-custom-color-5 u-border-2 u-border-active-custom-color-5 u-border-hover-custom-color-5 u-border-no-left u-border-no-right u-border-no-top u-button-style u-hover-custom-color-4 u-nav-link u-text-active-white u-text-grey-90 u-text-hover-white" href="./" style="padding: 10px 20px;">Accueil</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-active-custom-color-5 u-border-2 u-border-active-custom-color-5 u-border-hover-custom-color-5 u-border-no-left u-border-no-right u-border-no-top u-button-style u-hover-custom-color-4 u-nav-link u-text-active-white u-text-grey-90 u-text-hover-white" href="a-propos.html" style="padding: 10px 20px;">Services offert</a>
+</li><li role="none" class="u-nav-item"><a role="menuitem" class="u-active-custom-color-5 u-border-2 u-border-active-custom-color-5 u-border-hover-custom-color-5 u-border-no-left u-border-no-right u-border-no-top u-button-style u-hover-custom-color-4 u-nav-link u-text-active-white u-text-grey-90 u-text-hover-white" href="contact.html" style="padding: 10px 20px;">Nous Contacter</a>
 </li></ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse" id="2ba4" role="region" aria-label="Menu panel">
-            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-var u-sidenav u-sidenav-1">
               <div class="u-inner-container-layout u-sidenav-overflow">
                 <div class="u-menu-close" tabindex="-1" aria-label="Close menu"></div>
-                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2" role="menubar"><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="./">accueil</a>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2" role="menubar"><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="./">Accueil</a>
 </li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="a-propos.html">Services offert</a>
 </li><li role="none" class="u-nav-item"><a role="menuitem" class="u-button-style u-nav-link" href="contact.html">Nous Contacter</a>
 </li></ul>
               </div>
             </div>
-            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-var" style="--opacity: 0.7;"></div>
           </div>
-        </nav><span class="u-file-icon u-icon u-icon-1"><img src="images/31247.png" alt=""></span>
-        <p class="u-text u-text-2">
-          <a href="tel:450-806-6690" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">450-806-6690</a>
-        </p>
+          <style class="menu-style">@media (max-width: 939px) {
+                    [data-responsive-from="MD"] .u-nav-container {
+                        display: none;
+                    }
+                    [data-responsive-from="MD"] .menu-collapse {
+                        display: block;
+                    }
+                }</style>
+        </nav><span class="u-file-icon u-icon u-icon-2"><img src="images/646135.png" alt=""></span>
         <p class="u-text u-text-3">
-          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2" href="mailto:Soumission@escaliermonteaubois.ca"><span class="u-icon u-icon-2"></span>Contact@escaliermonteaubois.ca <span style="font-size: 1.125rem;"></span>
+          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-5 u-btn-2" href="mailto:Soumission@escaliermonteaubois.ca" target="_blank"><span class="u-icon u-icon-3"></span>Info@escaliermonteaubois.ca 
           </a>
-        </p><span class="u-file-icon u-icon u-icon-3"><img src="images/646135.png" alt=""></span>
+        </p>
       </div></header>
-<section class="u-clearfix u-section-1" id="block-1">
-  <div class="u-clearfix u-sheet u-sheet-1">
-    <div class="u-form u-form-1">
-      <form action="sendmail.php" method="POST" id="contactForm" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 10px;">
-        <div class="u-form-group u-form-name">
-          <label for="name-0445" class="u-label">Nom</label>
-          <input type="text" placeholder="Saisir votre nom" id="name-0445" name="name" class="u-input u-input-rectangle" required="">
+    <section class="u-clearfix u-section-1" id="block-1">
+      <div class="u-clearfix u-sheet u-valign-bottom-md u-sheet-1">
+        <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-col">
+              <div class="u-size-60">
+                <div class="u-layout-row">
+                  <div class="u-container-align-center u-container-style u-image u-image-round u-layout-cell u-radius u-shape-rectangle u-size-20 u-image-1" data-image-width="922" data-image-height="2048">
+                    <div class="u-container-layout u-container-layout-1"></div>
+                  </div>
+                  <div class="u-container-style u-layout-cell u-shape-rectangle u-size-20 u-layout-cell-2">
+                    <div class="u-container-layout u-valign-top-lg u-valign-top-md u-container-layout-2">
+                      <h2 class="u-align-center u-text u-text-custom-color-5 u-text-1"> Pour une question&nbsp;ou&nbsp;<br>une soumission 
+                      </h2>
+                      <div class="u-expanded-width u-form u-form-1">
+                        <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form" style="padding: 10px;">
+                          <div class="u-form-group u-form-name">
+                            <label for="name-0445" class="u-label">Nom</label>
+                            <input type="text" placeholder="Saisir votre nom" id="name-0445" name="name" class="u-input u-input-rectangle" required="">
+                          </div>
+                          <div class="u-form-email u-form-group">
+                            <label for="email-0445" class="u-label">Courriel</label>
+                            <input type="email" placeholder="Saisir une adresse mail" id="email-0445" name="email" class="u-input u-input-rectangle" required="">
+                          </div>
+                          <div class="u-form-group u-form-group-3">
+                            <label for="text-e83f" class="u-label">Numéro de téléphone</label>
+                            <input type="text" placeholder="Saisir un numéro de téléphone (optionnel)" id="text-e83f" name="text" class="u-input u-input-rectangle">
+                          </div>
+                          <div class="u-form-group u-form-message">
+                            <label for="message-0445" class="u-label">Message</label>
+                            <textarea placeholder="Saisir votre message" rows="4" cols="50" id="message-0445" name="message" class="u-input u-input-rectangle" required=""></textarea>
+                          </div>
+                          <div class="u-align-left u-form-group u-form-submit">
+                            <a href="#" class="u-btn u-btn-submit u-button-style u-custom-color-5 u-btn-1">Soumettre</a>
+                            <input type="submit" value="submit" class="u-form-control-hidden">
+                          </div>
+                          <div class="u-form-send-message u-form-send-success"> Merci ! Votre message a été envoyé. </div>
+                          <div class="u-form-send-error u-form-send-message"> Impossible d'envoyer votre message. Merci de corriger les erreurs et réessayer. </div>
+                          <input type="hidden" value="" name="recaptchaResponse">
+                          <input type="hidden" name="formServices" value="69cb9f96-9fa0-a6a1-b332-79ab882ee950">
+                          <input type="hidden" name="siteKey" value="6LeLlLcrAAAAAMwI-HIZXefNanQ9dITDI2nJ-H1v">
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="u-container-style u-image u-image-round u-layout-cell u-radius u-size-20 u-image-2" data-image-width="922" data-image-height="2048">
+                    <div class="u-container-layout u-container-layout-3"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="u-form-email u-form-group">
-          <label for="email-0445" class="u-label">Courriel</label>
-          <input type="email" placeholder="Saisir une adresse mail" id="email-0445" name="email" class="u-input u-input-rectangle" required="">
-        </div>
-        <div class="u-form-group u-form-message">
-          <label for="message-0445" class="u-label">Message</label>
-          <textarea placeholder="Saisir votre message" rows="4" cols="50" id="message-0445" name="message" class="u-input u-input-rectangle" required=""></textarea>
-        </div>
-        <div class="u-align-left u-form-group u-form-submit">
-          <button type="submit" id="submitBtn" class="u-btn u-btn-submit u-button-style">Soumettre</button>
-        </div>
-      </form>
-    </div>
-    <img class="u-expanded-width-xs u-image u-image-default u-image-1" src="images/688ec4af7e953d08e80c1a3a3150dec671cff238b19bbd0294ee14c9d9f2df09a9d11198fbde53f1e39199f723a4569a77be18ed7a554cadd918d8_1280.jpg" alt="" data-image-width="1280" data-image-height="850">
-  </div>
-</section>
-  <section class="u-clearfix u-custom-color-2 u-section-2" id="block-1">
-  <!-- ligne au-dessus du footer -->
-
-
-  <div class="footer-flex">
-  <div class="ligne-centree"></div>
-  <div class="texte-footer">
-    <p class="u-text-2">© escaliermonteaubois, Tout droit&nbsp;réservé.</p>
-    <p class="u-text-1">Réalisé par Thomas Martin</p>
-  </div>
-</div>
-    
-    
-    
-    
-    <section class="u-backlink u-clearfix u-grey-80"></section>
-  
+      </div>
+    </section>
+    <section class="u-clearfix u-custom-color-2 u-section-2" id="sec-3076">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="custom-expanded u-border-3 u-border-grey-dark-1 u-line u-line-horizontal u-line-1"></div>
+        <p class="u-align-center-xs u-small-text u-text u-text-variant u-text-1"> © Escaliermonteaubois, Tout droit réservé.&nbsp;</p>
+        <p class="u-align-center-xs u-small-text u-text u-text-variant u-text-2"> Réalisé par Thomas Martin</p>
+      </div>
 </body></html>
