@@ -3,8 +3,8 @@
 }
 
 .u-section-1 .u-layout-wrap-1 {
-  width: 1295px;
-  margin: 44px -77px 19px;
+  margin-top: 44px;
+  margin-bottom: 19px;
 }
 
 .u-section-1 .u-layout-cell-1 {
@@ -89,9 +89,6 @@
 
   .u-section-1 .u-layout-wrap-1 {
     margin-bottom: 29px;
-    margin-right: initial;
-    margin-left: initial;
-    width: auto;
   }
 
   .u-section-1 .u-layout-cell-1 {
@@ -139,9 +136,6 @@
   .u-section-1 .u-layout-wrap-1 {
     margin-top: 30px;
     margin-bottom: 54px;
-    width: auto;
-    margin-right: initial;
-    margin-left: initial;
   }
 
   .u-section-1 .u-layout-cell-1 {
@@ -181,9 +175,6 @@
 
   .u-section-1 .u-layout-wrap-1 {
     margin-bottom: 30px;
-    width: auto;
-    margin-right: initial;
-    margin-left: initial;
   }
 
   .u-section-1 .u-layout-cell-1 {
@@ -210,9 +201,6 @@
 
   .u-section-1 .u-layout-wrap-1 {
     margin-top: 0;
-    width: auto;
-    margin-right: initial;
-    margin-left: initial;
   }
 
   .u-section-1 .u-layout-cell-1 {
