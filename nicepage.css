@@ -47589,8 +47589,7 @@ a.u-link.u-text-hover-color-var:hover {
  html { font-size: 16px; }
  /*end-variables base-font-size*/
 
-
-  /* === Règles ciblées pour rendre visible l'icône hamburger === */
+   /* === Règles ciblées pour rendre visible l'icône hamburger === */
 .u-hamburger-link svg,
 .u-hamburger-link .u-svg-link,
 .u-hamburger-link .u-svg-content {
