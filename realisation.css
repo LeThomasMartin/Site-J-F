@@ -8,7 +8,8 @@
 
 .u-section-1 .u-layout-wrap-1 {
   --radius: 50px;
-  margin: 20px 0 0;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .u-section-1 .u-layout-cell-1 {
@@ -22,11 +23,11 @@
 
 .u-section-1 .u-text-1 {
   font-size: 3.75rem;
-  margin: 0 -4px;
+  margin: 41px -4px 0;
 }
 
 .u-section-1 .u-text-2 {
-  margin: 0 45px;
+  margin: 25px 45px 0;
 }
 
 .u-section-1 .u-image-1 {
@@ -166,11 +167,6 @@
 
   .u-section-1 .u-sheet-1 {
     min-height: 1128px;
-  }
-
-  .u-section-1 .u-layout-wrap-1 {
-    margin-right: initial;
-    margin-left: initial;
   }
 
   .u-section-1 .u-layout-cell-1 {
