@@ -3,61 +3,71 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escalier Monte au Bois | Escalier en bois d'intérieur</title>
-    <meta name="description" content="Escalier intérieur en bois massif, franc ou live edge sur mesure dans les Laurentides — fabrication artisanale, projets uniques, durables et personnalisés.">
     <meta name="keywords" content="escalier en bois, escalier sur mesure, bois massif, bois franc, artisan, Laurentides, fabrication escalier, live edge, escalier rustique, escalier moderne">
+    <meta name="description" content="Escalier intérieur en bois massif, franc ou live edge sur mesure dans les Laurentides — fabrication artisanale, projets uniques, durables et personnalisés.">
+    <meta name="theme-color" content="#478ac9">
     
-    <!-- Open Graph -->
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
     <meta property="og:title" content="Escalier Monte au Bois | Escalier en bois d'intérieur">
     <meta property="og:description" content="Escalier intérieur en bois massif, franc ou live edge sur mesure dans les Laurentides — fabrication artisanale, projets uniques, durables et personnalisés.">
-    <meta property="og:image" content="https://escaliermonteaubois.ca/images/escalier1.webp">
+    <meta property="og:image" content="https://escaliermonteaubois.ca/images/hero-main.webp">
     <meta property="og:url" content="https://escaliermonteaubois.ca/">
-    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animation.css">
     
     <!-- Favicon -->
     <link rel="icon" href="images/Logo.png">
     
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Escalier Monte au Bois",
+        "logo": "images/Logo.png"
+    }
+    </script>
     
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/style-simplified.css">
+    <title>Escalier Monte au Bois | Escalier en bois d'intérieur</title>
 </head>
+
 <body>
-    <!-- Navigation Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <a href="./" class="logo">
-                    <img src="images/Logo.png" alt="Escalier Monte au Bois Logo">
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <!-- Logo -->
+            <a href="./" class="logo">
+                <img src="images/logo.png" alt="Escalier Monte au Bois - Logo">
+            </a>
+            
+            <!-- Navigation -->
+            <nav>
+                <ul>
+                    <li><a href="./">Accueil</a></li>
+                    <li><a href="realisation.html">Réalisations</a></li>
+                    <li><a href="contact.html">Nous Contacter</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Header Links -->
+            <div class="header-links">
+                <a href="tel:450-806-6690" class="header-link">
+                    <img src="images/icon-phone.png" alt="Téléphone">
+                    <span>450-806-6690</span>
                 </a>
-                
-                <nav class="nav" id="nav">
-                    <ul class="nav-menu">
-                        <li><a href="./" class="nav-link active">Accueil</a></li>
-                        <li><a href="realisation.html" class="nav-link">Réalisations</a></li>
-                        <li><a href="contact.html" class="nav-link">Nous Contacter</a></li>
-                    </ul>
-                </nav>
-                
-                <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                
-                <div class="header-contact">
-                    <a href="tel:450-806-6690" class="header-link">
-                        <img src="images/31247.png" alt="" class="header-icon">
-                        450-806-6690
-                    </a>
-                    <a href="mailto:Info@escaliermonteaubois.ca" class="header-link">
-                        <img src="images/646135.png" alt="" class="header-icon">
-                        Info@escaliermonteaubois.ca
-                    </a>
-                </div>
+                <a href="mailto:Info@escaliermonteaubois.ca" class="header-link">
+                    <img src="images/icon-email.png" alt="Email">
+                    <span>Info@escaliermonteaubois.ca</span>
+                </a>
+                <a href="contact.html" class="header-link" style="border: none; padding: 0;">
+                    Nous joindre
+                </a>
             </div>
         </div>
     </header>
@@ -66,44 +76,47 @@
     <main>
         <!-- Hero Section -->
         <section class="hero">
-            <div class="container">
-                <div class="hero-grid">
-                    <!-- Left Column: Text & CTA -->
-                    <div class="hero-text">
-                        <h1>Escalier<br>Monte au Bois</h1>
-                        <p class="hero-intro">L'arbre, de la forêt à votre résidence.<br>Projet personnalisé et unique</p>
-                        
-                        <div class="hero-description">
-                            <p><strong>Bois massif, bois rond, live edge, …</strong></p>
-                            <p>Dans un décor moderne ou rustique, la vraie nature du bois massif rehaussera le style et le cachet de votre demeure.</p>
-                            
-                            <h3>Envisager d'immortaliser votre arbre!</h3>
-                            <p>Il arrive parfois que l'on se retrouve dans l'obligation de couper un arbre qui vous est cher (projet d'agrandissement, ligne électrique, sécurité, …). Il est possible d'en faire un projet magnifique et unique qui le rendra éternel.</p>
-                            
-                            <p>Que ce soit en rénovation, maison neuve, à l'intérieur ou à l'extérieur, Escalier Monte au Bois saura matérialiser votre vision.</p>
-                        </div>
-                        
-                        <a href="contact.html" class="btn btn-primary">Prendre Contact →</a>
-                    </div>
-                    
-                    <!-- Right Column: Images -->
-                    <div class="hero-gallery">
-                        <img src="images/att.MyzEK_eUaYIIXf4B3JOiFsKHNY--bMb97EbUo_n9EGo.JPG" alt="Escalier d'intérieur en bois franc" class="hero-main-image">
-                        <img src="images/unnamed3.jpg" alt="Escalier en bois d'intérieur" class="hero-secondary-image">
-                    </div>
-                </div>
+            <!-- Left Column: Text Content -->
+            <div class="hero-content">
+                <h1 class="hero-title">Escalier Monte au Bois</h1>
+                
+                <p class="hero-text">L'arbre, de la forêt à votre résidence.
+Projet personnalisé et unique
+
+Bois massif, bois rond, live Edge, …
+
+Dans un décor moderne ou rustique, la vraie nature du bois massif rehaussera le style et le cachet de votre demeure.
+
+Envisager d'immortaliser votre arbre!
+Il arrive parfois que l'on se retrouve dans l'obligation de couper un arbre qui vous est cher (projet d'agrandissement, ligne électrique, sécurité, …) Il est possible d'en faire un projet magnifique et unique qui le rendra éternel.
+
+Que ce soit en rénovation, maison neuve, à l'intérieur ou à l'extérieur, Escalier Monte au Bois saura matérialiser votre vision.</p>
+                
+                <a href="contact.html" class="btn">
+                    Prendre Contact
+                    <svg viewBox="0 0 512 512">
+                        <path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068 c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557 l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104 c0.006-.006,0.011-.013,0.018-.019C513.968,262.339,513.943,249.635,506.134,241.843z"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Right Column: Images -->
+            <div class="hero-images">
+                <img src="images/hero-main.webp" alt="Escalier en bois franc" class="hero-image">
+                <img src="images/hero-secondary.jpg" alt="Escalier d'intérieur en bois" class="hero-image small">
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; EscaliersMonteAuBois, Tous droits réservés.</p>
-            <p>Services offert dans les Laurentides | Réalisé par Thomas Martin</p>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-divider"></div>
+            <p class="footer-text">© EscaliersMonteAuBois, Tous droits réservés.</p>
+            <p class="footer-text">Services offert dans les Laurentides</p>
+            <p class="footer-text">Réalisé par Thomas Martin</p>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
 </body>
 </html>
