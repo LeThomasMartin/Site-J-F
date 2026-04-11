@@ -32,7 +32,7 @@
 
 .u-section-1 .u-image-1 {
   min-height: 424px;
-  background-image: url("images/unnamed13.jpg");
+  background-image: url("../images/unnamed13.jpg");
   background-position: 50% 62.33%;
   background-size: cover;
 }
@@ -43,7 +43,7 @@
 
 .u-section-1 .u-image-2 {
   min-height: 424px;
-  background-image: url("images/escalier1.webp");
+  background-image: url("../images/escalier1.webp");
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -55,7 +55,7 @@
 .u-section-1 .u-image-3 {
   min-height: 269px;
   filter: none;
-  background-image: url("images/unnamed71.jpg");
+  background-image: url("../images/unnamed71.jpg");
   background-position: 50% 50%;
 }
 
@@ -66,7 +66,7 @@
 .u-section-1 .u-image-4 {
   min-height: 528px;
   filter: none;
-  background-image: url("images/unnamed6.jpg");
+  background-image: url("../images/unnamed6.jpg");
   background-position: 50% 47.94%;
 }
 
@@ -76,7 +76,7 @@
 
 .u-section-1 .u-image-5 {
   min-height: 528px;
-  background-image: url("images/unnamed73.jpg");
+  background-image: url("../images/unnamed73.jpg");
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -94,7 +94,7 @@
 .u-section-1 .u-image-6 {
   min-height: 263px;
   filter: none;
-  background-image: url("images/unnamed9.jpg");
+  background-image: url("../images/unnamed9.jpg");
   background-position: 50% 47.56%;
   background-size: cover;
 }
@@ -105,7 +105,7 @@
 
 .u-section-1 .u-image-7 {
   min-height: 524px;
-  background-image: url("images/unnamed81.jpg");
+  background-image: url("../images/unnamed81.jpg");
   background-position: 50% 0%;
   background-size: cover;
 }
@@ -117,7 +117,7 @@
 .u-section-1 .u-image-8 {
   min-height: 524px;
   filter: none;
-  background-image: url("images/unnamed21.jpg");
+  background-image: url("../images/unnamed21.jpg");
   background-position: 50% 59.61%;
   background-size: cover;
 }
@@ -129,7 +129,7 @@
 .u-section-1 .u-image-9 {
   min-height: 385px;
   filter: none;
-  background-image: url("images/unnamed102.jpg");
+  background-image: url("../images/unnamed102.jpg");
   background-position: 100% 50%;
   background-size: cover;
 }
@@ -140,7 +140,7 @@
 
 .u-section-1 .u-image-10 {
   min-height: 402px;
-  background-image: url("images/unnamed111.jpg");
+  background-image: url("../images/unnamed111.jpg");
   background-position: 50% 100%;
   background-size: cover;
 }
@@ -151,7 +151,7 @@
 
 .u-section-1 .u-image-11 {
   min-height: 402px;
-  background-image: url("images/unnamed1.jpg");
+  background-image: url("../images/unnamed1.jpg");
   background-position: 50% 41.06%;
   background-size: cover;
 }

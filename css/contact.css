@@ -9,7 +9,7 @@
 
 .u-section-1 .u-image-1 {
   min-height: 827px;
-  background-image: url("images/unnamed6.jpg");
+  background-image: url("../images/unnamed6.jpg");
   background-position: 50% 50%;
   --top-left-radius: 40px;
   --bottom-left-radius: 40px;
@@ -55,7 +55,7 @@
 .u-section-1 .u-image-2 {
   min-height: 827px;
   filter: none;
-  background-image: url("images/unnamed4.jpg");
+  background-image: url("../images/unnamed4.jpg");
   background-position: 50% 50%;
   --top-right-radius: 40px;
   --bottom-right-radius: 40px;
