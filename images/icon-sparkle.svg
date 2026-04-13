@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="currentColor">
-  <path d="M32 4L38 16L50 16L40 24L45 36L32 29L19 36L24 24L14 16L26 16L32 4Z"/>
-  <circle cx="12" cy="12" r="2" fill="currentColor"/>
-  <circle cx="52" cy="48" r="1.5" fill="currentColor"/>
-  <circle cx="8" cy="44" r="1.5" fill="currentColor"/>
-  <circle cx="56" cy="20" r="1" fill="currentColor"/>
-</svg>

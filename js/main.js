@@ -6,6 +6,15 @@
 // This file is reserved for future custom functionality.
 
 document.addEventListener('DOMContentLoaded', () => {
-    // All menu functionality is handled by nicepage.js
-    // Add custom code here as needed
+    addFooter();
 });
+
+
+function addFooter() {
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        })
+        .catch(error => console.error('Error loading footer:', error));
+}
