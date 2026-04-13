@@ -34,6 +34,5 @@ Site-J-F/
 │   └── animations.css
 ├── js/
 │   └── script.js
-└── assets/
-    ├── images/
-    └── icons/
+└── images/
+    └── textures/
