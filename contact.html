@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="contact escalier, demande soumission, escalier en bois massif, contact Laurentides">
     <meta name="description" content="Contactez Escalier Monte au Bois — spécialiste d'escaliers en bois d'intérieur. Demandez une soumission gratuite.">
-    <meta name="theme-color" content="#478ac9">
+    <meta name="theme-color" content="#436b3b">
     
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
@@ -61,65 +61,165 @@
                     Nous joindre
                 </a>
             </div>
+
+            <!-- Hamburger Menu -->
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
     <!-- Main Content -->
     <main>
-        <!-- Contact Section -->
-        <section class="contact-section">
-            <!-- Left Image -->
-            <img src="images/gallery-03.jpg" alt="Escalier en bois franc" class="contact-image">
-            
-            <!-- Form Container -->
-            <div class="contact-form">
-                <h2>Des questions?</h2>
-                <p style="text-align: center; color: #666; margin-bottom: 25px;">Contactez-nous pour toute question, il nous fera plaisir d'y répondre.</p>
-                
-                <form action="https://service.nicepagesrv.com/form/v4/form-process" method="POST">
-                    <div class="form-group">
-                        <label for="name">Nom</label>
-                        <input type="text" id="name" name="name" placeholder="Saisir votre nom" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Courriel</label>
-                        <input type="email" id="email" name="email" placeholder="Saisir votre adresse mail" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="phone">Téléphone</label>
-                        <input type="tel" id="phone" name="phone" placeholder="450-806-6690" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Saisir votre message" required></textarea>
-                    </div>
-                    
-                    <div class="g-recaptcha" data-sitekey="6LdfeIwrAAAAAMnDkaIExdHsV0Nsj8y-CU9AyTjZ"></div>
-                    
-                    <button type="submit" class="btn-submit">Soumettre</button>
-                </form>
-                
-                <div class="form-success">Merci ! Votre message a bien été envoyé. Nous vous répondrons dans les plus brefs délais.</div>
-                <div class="form-error">Erreur lors de l'envoi. Veuillez réessayer.</div>
+        <!-- Hero Section -->
+        <section class="hero-minimal">
+            <div class="hero-text-container">
+                <h1 class="hero-title-main">Nous Contacter</h1>
+                <p class="hero-subtitle">Vous avez un projet en tête? Contactez-nous pour une consultation gratuite et découvrez comment nous pouvons matérialiser votre vision.</p>
+                <p style="color: var(--color-light); font-size: 1rem; line-height: 1.8;">
+                    <strong>Téléphone:</strong> <a href="tel:450-806-6690" style="color: var(--color-primary); text-decoration: none;">450-806-6690</a><br>
+                    <strong>Email:</strong> <a href="mailto:Info@escaliermonteaubois.ca" style="color: var(--color-primary); text-decoration: none;">Info@escaliermonteaubois.ca</a><br>
+                    <strong>Région:</strong> Laurentides, Québec
+                </p>
             </div>
-            
-            <!-- Right Image -->
-            <img src="images/gallery-11.jpg" alt="Escalier en bois franc" class="contact-image">
+            <div class="hero-image-full">
+                <img src="images/gallery-03.jpg" alt="Contact Escalier Monte au Bois">
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="section-container">
+                <h2 class="section-title">Entrez en Contact</h2>
+                <div class="contact-form-wrapper">
+                    <div class="form-column">
+                        <h3>Remplissez le formulaire</h3>
+                        <p style="color: var(--color-light); margin-bottom: 30px;">Un de nos experts vous contactera rapidement après réception du formulaire.</p>
+                        
+                        <form action="https://service.nicepagesrv.com/form/v4/form-process" method="POST">
+                            <div class="form-group">
+                                <label for="name">Nom complet *</label>
+                                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Adresse Email *</label>
+                                <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Téléphone *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="450-806-6690" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Décrivez votre Projet *</label>
+                                <textarea id="message" name="message" placeholder="Parlez-nous de votre projet, vos idées, vos préférences..." required></textarea>
+                            </div>
+                            
+                            <div class="g-recaptcha" data-sitekey="6LdfeIwrAAAAAMnDkaIExdHsV0Nsj8y-CU9AyTjZ"></div>
+                            
+                            <button type="submit" class="btn btn-large">Soumettre ma Demande</button>
+                        </form>
+                        
+                        <div class="form-success">✓ Merci! Votre message a bien été envoyé. Nous vous répondrons sous peu.</div>
+                        <div class="form-error">✗ Erreur. Veuillez vérifier vos données et réessayer.</div>
+                    </div>
+                    
+                    <div class="info-column">
+                        <div class="info-card">
+                            <h4>📍 Localisation</h4>
+                            <p>Laurentides, Québec</p>
+                        </div>
+                        <div class="info-card">
+                            <h4>☎️ Appel Direct</h4>
+                            <p><a href="tel:450-806-6690" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">450-806-6690</a></p>
+                        </div>
+                        <div class="info-card">
+                            <h4>✉️ Email</h4>
+                            <p><a href="mailto:Info@escaliermonteaubois.ca" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">Info@escaliermonteaubois.ca</a></p>
+                        </div>
+                        <div class="info-card">
+                            <h4>⏰ Disponibilités</h4>
+                            <p>Lundi à Vendredi<br>9h00 - 17h00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-divider"></div>
-            <p class="footer-text">© EscaliersMonteAuBois, Tous droits réservés.</p>
-            <p class="footer-text">Services offert dans les Laurentides</p>
-            <p class="footer-text">Réalisé par Thomas Martin</p>
+        <div class="footer-wrapper">
+            <div class="footer-main">
+                <div class="footer-column">
+                    <h3 class="footer-heading">Escalier Monte au Bois</h3>
+                    <p class="footer-description">Création artisanale d'escaliers en bois massif sur mesure, combinant excellence et passion pour le travail du bois.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" title="Facebook"><span>f</span></a>
+                        <a href="#" class="social-link" title="Instagram"><span>📷</span></a>
+                        <a href="#" class="social-link" title="LinkedIn"><span>in</span></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-subheading">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="./">Accueil</a></li>
+                        <li><a href="realisation.html">Réalisations</a></li>
+                        <li><a href="a-propos.html">À Propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-subheading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Escaliers Massifs</a></li>
+                        <li><a href="#">Escaliers Live Edge</a></li>
+                        <li><a href="#">Rénovations</a></li>
+                        <li><a href="#">Consultation</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-subheading">Contactez-nous</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <strong>Téléphone</strong><br>
+                            <a href="tel:450-806-6690">450-806-6690</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Email</strong><br>
+                            <a href="mailto:Info@escaliermonteaubois.ca">Info@escaliermonteaubois.ca</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Région</strong><br>
+                            <span>Laurentides, QC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="footer-copyright">© 2024-2026 Escalier Monte au Bois. Tous droits réservés.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Politique de Confidentialité</a>
+                        <span class="divider">•</span>
+                        <a href="#">Conditions d'Utilisation</a>
+                    </div>
+                </div>
+                <p class="footer-credit">Réalisé par Thomas Martin</p>
+            </div>
         </div>
     </footer>
+
+    <!-- Mobile Menu Script -->
+    <script src="js/menu.js"></script>
 
 </body>
 </html>

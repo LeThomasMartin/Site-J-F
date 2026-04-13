@@ -20,57 +20,98 @@ a {
 }
 
 a:hover {
-  color: #345a8e;
+  color: #346b3b;
 }
 
 /* ============================================
    3. HEADER ANIMATIONS
    ============================================ */
 header {
-  transition: box-shadow var(--transition);
+  transition: box-shadow 0.3s ease, background 0.3s ease;
 }
 
 header:hover {
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.logo {
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: perspective(1000px) rotateY(-5deg) scale(1.02);
+}
+
+.logo img {
+  transition: filter 0.3s ease;
+}
+
+.logo:hover img {
+  filter: drop-shadow(0 4px 12px rgba(67, 102, 59, 0.2));
 }
 
 .header-link {
-  transition: color var(--transition);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.header-link::before {
+  transition: opacity 0.3s ease;
 }
 
 .header-link:hover {
-  color: #345a8e;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.header-link:hover::before {
+  opacity: 0.08;
+}
+
+.header-link img {
+  transition: transform 0.3s ease;
+}
+
+.header-link:hover img {
+  transform: scale(1.15) rotate(5deg);
 }
 
 /* ============================================
    4. NAVIGATION ANIMATIONS
    ============================================ */
 nav a {
-  transition: all var(--transition);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+nav a::before {
+  transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 nav a:hover {
   color: var(--color-primary);
-  border-bottom: 2px solid var(--color-primary);
+  transform: translateY(-2px);
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  transition: all 0.3s ease;
+}
+
+.hamburger:hover {
+  background: rgba(67, 102, 59, 0.08);
+  transform: scale(1.1);
 }
 
 /* ============================================
    5. HAMBURGER MENU ANIMATIONS
    ============================================ */
 .hamburger span {
-  transition: all var(--transition);
-}
-
-.hamburger.active span:nth-child(1) {
-  transform: rotate(45deg) translate(10px, 10px);
-}
-
-.hamburger.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -7px);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 /* ============================================
@@ -81,17 +122,17 @@ nav a:hover {
 }
 
 .btn:hover {
-  background-color: #345a8e;
+  background-color: #346b3b;
   color: white;
   text-decoration: none;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(71, 138, 201, 0.3);
+  box-shadow: 0 5px 15px rgba(67, 102, 59, 0.3);
 }
 
 .btn-primary:hover {
-  background: #2d5a96;
+  background: #2d5f33;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(71, 138, 201, 0.3);
+  box-shadow: 0 5px 15px rgba(67, 102, 59, 0.3);
 }
 
 input[type="submit"],
@@ -103,9 +144,9 @@ button[type="submit"],
 input[type="submit"]:hover,
 button[type="submit"]:hover,
 .btn-submit:hover {
-  background-color: #345a8e;
+  background-color: #346b3b;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(71, 138, 201, 0.3);
+  box-shadow: 0 5px 15px rgba(67, 102, 59, 0.3);
 }
 
 /* ============================================
@@ -125,7 +166,7 @@ input[type="tel"]:focus,
 textarea:focus,
 select:focus {
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(71, 138, 201, 0.1);
+  box-shadow: 0 0 0 3px rgba(67, 102, 59, 0.1);
 }
 
 /* ============================================
@@ -157,7 +198,7 @@ select:focus {
 
 .service-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(71, 138, 201, 0.15);
+  box-shadow: 0 10px 30px rgba(67, 102, 59, 0.15);
 }
 
 /* ============================================
@@ -226,7 +267,7 @@ h1, h2, h3 {
 }
 
 h1:hover, h2:hover, h3:hover {
-  color: #2d5a96;
+  color: #2d5f33;
 }
 
 /* ============================================
@@ -323,5 +364,197 @@ button, a, input[type="submit"] {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #2d5a96;
+  background: #2d5f33;
+}
+
+/* ============================================
+   20. FEATURE CARD ANIMATIONS
+   ============================================ */
+.feature-card {
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(67, 102, 59, 0.15);
+  border-color: var(--color-primary);
+}
+
+.feature-icon {
+  transition: transform var(--transition);
+}
+
+.feature-card:hover .feature-icon {
+  transform: scale(1.1);
+}
+
+/* ============================================
+   21. STEP ANIMATIONS
+   ============================================ */
+.step {
+  transition: all var(--transition);
+}
+
+.step-number {
+  transition: all var(--transition);
+}
+
+.step:hover {
+  transform: translateY(-3px);
+}
+
+.step:hover .step-number {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(67, 102, 59, 0.3);
+}
+
+/* ============================================
+   22. GALLERY PREVIEW ANIMATIONS
+   ============================================ */
+.gallery-preview-img {
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.gallery-preview-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(67, 102, 59, 0.2);
+}
+
+/* ============================================
+   23. CTA SECTION ANIMATIONS
+   ============================================ */
+.cta-final .btn {
+  transition: all var(--transition);
+}
+
+.cta-final .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cta-final .btn-outline:hover {
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+}
+
+/* ============================================
+   24. CONTACT FORM ANIMATIONS
+   ============================================ */
+.info-card {
+  transition: all var(--transition), border-color var(--transition);
+}
+
+.info-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 8px 25px rgba(67, 102, 59, 0.1);
+  transform: translateY(-3px);
+}
+
+.form-group input,
+.form-group textarea {
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(67, 102, 59, 0.1);
+}
+
+/* ============================================
+   25. GALLERY MODERN ANIMATIONS
+   ============================================ */
+.gallery-item-modern {
+  transition: all var(--transition);
+}
+
+.gallery-item-modern:hover {
+  box-shadow: 0 15px 40px rgba(67, 102, 59, 0.2);
+  transform: translateY(-5px);
+}
+
+.gallery-item-modern img {
+  transition: transform var(--transition);
+}
+
+.gallery-item-modern:hover img {
+  transform: scale(1.08);
+}
+
+/* ============================================
+   26. FOOTER ANIMATIONS
+   ============================================ */
+.footer-links li a {
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-links li a::before {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: white;
+  padding-left: 8px;
+}
+
+.footer-links li a:hover::before {
+  transform: translateX(4px);
+  color: white;
+}
+
+.social-link {
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-4px) scale(1.1);
+  animation: socialPulse 0.6s ease;
+}
+
+@keyframes socialPulse {
+  0%, 100% {
+    box-shadow: 0 8px 20px rgba(67, 102, 59, 0.3);
+  }
+  50% {
+    box-shadow: 0 12px 30px rgba(67, 102, 59, 0.5);
+  }
+}
+
+.contact-item a {
+  transition: all 0.3s ease;
+}
+
+.contact-item a:hover {
+  text-shadow: 0 0 8px rgba(90, 140, 74, 0.3);
+}
+
+.footer-bottom-links a {
+  transition: all 0.3s ease;
+}
+
+.footer-bottom-links a::after {
+  transition: width 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+  transform: translateY(-2px);
+}
+
+.footer-subheading {
+  position: relative;
+  display: inline-block;
+}
+
+.footer-subheading::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-primary), transparent);
+  transition: width 0.4s ease;
+}
+
+.footer-column:hover .footer-subheading::after {
+  width: 50px;
 }
